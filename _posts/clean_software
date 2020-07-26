@@ -13,3 +13,4 @@ title: SOLID
   - “Closed for Modification”.
     - The source code of such a module is inviolate. No one is allowed to make source code changes to it.
     
+ ![](./images/fig_1.jpg)
