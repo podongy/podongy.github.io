@@ -51,9 +51,19 @@ log(3)    -> [1,3] (not [3])
 
 # * Pythonic Codes
 * Consider Generator Expressions for Large Comprehensions
-
+* Prefer Public Attributes Over Private Ones
+* **Inherit from collections.abc for Custom Container Types**
+> **Much of programming in Python is defining classes that contain data and describing how
+such objects relate to each other.**
+> Have your custom container types inherit from the interfaces defined in
+> collections.abc to ensure that your classes match required interfaces and
+> behaviors.
 
 # * Not sure...
 * Enforce Clarity with Keyword-Only Arguments
 * Use @classmethod Polymorphism to Construct Objects Generically
   * Is it better than Factory pattern?
+* Use Multiple Inheritance Only for Mix-in Utility Classes
+  * Or don't use multiple inheritance
+* Inherit directly from Python’s container types (like list or dict) for simple use cases.
+  * Beware of the large number of methods required to implement custom container types correctly.
