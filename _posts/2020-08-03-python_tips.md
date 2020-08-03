@@ -32,15 +32,13 @@ title: Effective Python
 > load time. This can cause odd behaviors for dynamic values (like {} or []).
 > Use None as the default value for keyword arguments that have a dynamic value.
 > Document the actual default behavior in the function’s docstring.
-'''python
-def log(data, default={}):
-...
+```python
 def log(data,default=[]):
     default.append(data)
     print(default)
 
-log(1,[])
-log(1)
-log(3,[])
-log(3)
-'''
+log(1,[]) -> [1]
+log(1)    -> [1]
+log(3,[]) -> [3]
+log(3)    -> [1,3] (not [3])
+```
