@@ -18,5 +18,13 @@ title: Effective Python
 * **Avoid More Than Two Expressions in List Comprehensions**
 * Avoid else Blocks After for and while Loops (because their behavior isn’t intuitive) 
 > The `else` block after a loop only runs if the loop body did not encounter a `break` statement.
+
+
+* Be Defensive When Iterating Over Arguments
+> An iterator only produces its results a single time. If you iterate over an iterator or generator 
+> that has already raised a StopIteration exception,
+> you won’t get any results the second time around. 
+
+
 # * Pythonic Codes
 * Consider Generator Expressions for Large Comprehensions
