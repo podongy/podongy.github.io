@@ -93,6 +93,8 @@ such objects relate to each other.**
   dropwhile| Returns items from an iterator once the predicate function returns False for the first time.
   filterfalse| The opposite of the filter built-in function.
 
+* Use decimal When Precision Is Paramount
+* Use `__getattr__`, `__getattribute__`, and `__setattr__` for Lazy Attributes
 
 # * Not sure...
 * Enforce Clarity with Keyword-Only Arguments
