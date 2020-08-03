@@ -20,13 +20,13 @@ title: Effective Python
 * Avoid else Blocks After for and while Loops (because their behavior isn’t intuitive) 
 > The `else` block after a loop only runs if the loop body did not encounter a `break` statement.
 
+# * Pitfalls 
+
 * Be Defensive When Iterating Over Arguments
 > An iterator only produces its results a single time. If you iterate over an iterator or generator 
 > that has already raised a StopIteration exception,
 > you won’t get any results the second time around. 
 
-# * Pythonic Codes
-* Consider Generator Expressions for Large Comprehensions
 * Use None and Docstrings to Specify Dynamic Default Arguments
 > Default arguments are only evaluated once: during function definition at module
 > load time. This can cause odd behaviors for dynamic values (like {} or []).
@@ -42,3 +42,6 @@ log(1)    -> [1]
 log(3,[]) -> [3]
 log(3)    -> [1,3] (not [3])
 ```
+
+# * Pythonic Codes
+* Consider Generator Expressions for Large Comprehensions
