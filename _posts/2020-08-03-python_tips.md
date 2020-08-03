@@ -95,7 +95,10 @@ such objects relate to each other.**
 
 * Use decimal When Precision Is Paramount
 * Use `__getattr__`, `__getattribute__`, and `__setattr__` for Lazy Attributes
+  * `__getattribute__` gets called every time an attribute is accessed.
+  *  `__getattr__` only gets called once when accessing a missing attribute.
   * Avoid infinite recursion in `__getattribute__` and `__setattr__` by using `super().__getattribute__(item)`
+  
 * Use Descriptors for Reusable @property Methods
 
 # * Not sure...
