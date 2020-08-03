@@ -16,8 +16,7 @@ title: Effective Python
 * Avoid Using start, end, and stride in a Single Slice
 * **Use List Comprehensions Instead of map and filter** 
 * **Avoid More Than Two Expressions in List Comprehensions**
-* Avoid else Blocks After for and while Loops
-
-
+* Avoid else Blocks After for and while Loops (because their behavior isn’t intuitive) 
+> The `else` block after a loop only runs if the loop body did not encounter a `break` statement.
 # * Pythonic Codes
 * Consider Generator Expressions for Large Comprehensions
