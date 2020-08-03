@@ -49,6 +49,15 @@ log(3,[]) -> [3]
 log(3)    -> [1,3] (not [3])
 ```
 
+* Use Threads for Blocking I/O, Avoid for Parallelism
+> Python threads can’t run bytecode in parallel on multiple CPU cores because of the
+> global interpreter lock (GIL)
+
+* Use Lock to Prevent Data Races in Threads
+> Although only one Python thread runs at a time, the GIL will not protect you. 
+
+* Define Function Decorators with functools.wraps
+
 # * Pythonic Codes
 * Consider Generator Expressions for Large Comprehensions
 * Prefer Public Attributes Over Private Ones
@@ -58,6 +67,21 @@ such objects relate to each other.**
 > Have your custom container types inherit from the interfaces defined in
 > collections.abc to ensure that your classes match required interfaces and
 > behaviors.
+* Use Plain Attributes Instead of Get and Set Methods
+* Use subprocess to Manage Child Processes
+* Consider contextlib and with Statements for Reusable try/finally Behavior
+* Make pickle Reliable with copyreg
+* Profile Before Optimizing
+* Use tracemalloc to Understand Memory Usage and Leaks
+* Use Built-in Algorithms and Data Structures
+
+
+   Data Structure | Description
+   ---------------|----------------------
+   Double ended Queue (deque) | inserting or removing items from its beginning or end    
+  Ordered Dictionary (OrderedDict)| keeps track of the order in which its keys were inserted 
+  Default Dictionary (defaultdict)| automatically storing a default value when a key doesn’t exist  Heap Queue (heapq)| maintaining a priority queue
+  Bisection (bisect)|  provide an efficient binary search through a sequence of sorted items.
 
 # * Not sure...
 * Enforce Clarity with Keyword-Only Arguments
@@ -67,3 +91,5 @@ such objects relate to each other.**
   * Or don't use multiple inheritance
 * Inherit directly from Python’s container types (like list or dict) for simple use cases.
   * Beware of the large number of methods required to implement custom container types correctly.
+* Consider @property Instead of Refactoring Attributes
+  * 
