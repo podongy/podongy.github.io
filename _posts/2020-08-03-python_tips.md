@@ -75,13 +75,19 @@ such objects relate to each other.**
 * Use tracemalloc to Understand Memory Usage and Leaks
 * Use Built-in Algorithms and Data Structures
 
-
    Data Structure | Description
    ---------------|----------------------
    Double ended Queue (deque) | inserting or removing items from its beginning or end    
   Ordered Dictionary (OrderedDict)| keeps track of the order in which its keys were inserted 
   Default Dictionary (defaultdict)| automatically storing a default value when a key doesn’t exist  Heap Queue (heapq)| maintaining a priority queue
   Bisection (bisect)|  provide an efficient binary search through a sequence of sorted items.
+
+   Itertools | Description
+   ---------------|----------------------
+   chain| Combines multiple iterators into a single sequential iterator.
+   cycle| Repeats an iterator’s items forever.
+   tee| Splits a single iterator into multiple parallel iterators.
+   zip_longest| A variant of the zip built-in function that works well with iterators of different lengths.
 
 # * Not sure...
 * Enforce Clarity with Keyword-Only Arguments
@@ -92,4 +98,3 @@ such objects relate to each other.**
 * Inherit directly from Python’s container types (like list or dict) for simple use cases.
   * Beware of the large number of methods required to implement custom container types correctly.
 * Consider @property Instead of Refactoring Attributes
-  * 
