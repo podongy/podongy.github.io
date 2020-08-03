@@ -21,7 +21,7 @@ title: Effective Python
 > The `else` block after a loop only runs if the loop body did not encounter a `break` statement.
 
 * **Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples**
-  *  ** (Avoid dictionaries that contain dictionaries!!!) **
+  *  **(Avoid dictionaries that contain dictionaries!!!)**
 > **Avoid making dictionaries with values that are other dictionaries or long tuples.**
 > Use `namedtuple` for lightweight, immutable data containers before you need the
 > flexibility of a full class.
@@ -55,4 +55,5 @@ log(3)    -> [1,3] (not [3])
 
 # * Not sure...
 * Enforce Clarity with Keyword-Only Arguments
-
+* Use @classmethod Polymorphism to Construct Objects Generically
+  * Is it better than Factory pattern?
