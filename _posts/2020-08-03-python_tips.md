@@ -88,6 +88,11 @@ such objects relate to each other.**
    cycle| Repeats an iterator’s items forever.
    tee| Splits a single iterator into multiple parallel iterators.
    zip_longest| A variant of the zip built-in function that works well with iterators of different lengths.
+   islice| Slices an iterator by numerical indexes without copying.
+   takewhile| Returns items from an iterator while a predicate function returns True.
+  dropwhile| Returns items from an iterator once the predicate function returns False for the first time.
+  filterfalse| The opposite of the filter built-in function.
+
 
 # * Not sure...
 * Enforce Clarity with Keyword-Only Arguments
