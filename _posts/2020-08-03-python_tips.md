@@ -20,6 +20,12 @@ title: Effective Python
 * Avoid else Blocks After for and while Loops (because their behavior isn’t intuitive) 
 > The `else` block after a loop only runs if the loop body did not encounter a `break` statement.
 
+* **Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples**
+  *  ** (Avoid dictionaries that contain dictionaries!!!) **
+> **Avoid making dictionaries with values that are other dictionaries or long tuples.**
+> Use `namedtuple` for lightweight, immutable data containers before you need the
+> flexibility of a full class.
+
 # * Pitfalls 
 
 * Be Defensive When Iterating Over Arguments
@@ -45,3 +51,8 @@ log(3)    -> [1,3] (not [3])
 
 # * Pythonic Codes
 * Consider Generator Expressions for Large Comprehensions
+
+
+# * Not sure...
+* Enforce Clarity with Keyword-Only Arguments
+
