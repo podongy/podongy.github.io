@@ -84,8 +84,11 @@ such objects relate to each other.**
 
    Itertools | Description
    ---------------|----------------------
+   
    chain| Combines multiple iterators into a single sequential iterator.
+   count| range() without upper limit.
    cycle| Repeats an iterator’s items forever.
+   repeat| Repeats a single value. `repeat(1,10)`
    tee| Splits a single iterator into multiple parallel iterators.
    zip_longest| A variant of the zip built-in function that works well with iterators of different lengths.
    islice| Slices an iterator by numerical indexes without copying.
