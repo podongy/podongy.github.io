@@ -99,7 +99,8 @@ such objects relate to each other.**
    dropwhile| Returns items from an iterator once the predicate function returns False for the first time.
    filterfalse| The opposite of the filter built-in function.
    starmap| Maps a function to an iterable sequence of tuples using each iterable as an `*args` argument to the given function.
-
+   <https://docs.python.org/3/library/itertools.html#itertools.islice>
+   
 * Use decimal When Precision Is Paramount
 * Use `__getattr__`, `__getattribute__`, and `__setattr__` for Lazy Attributes
   * `__getattribute__` gets called every time an attribute is accessed.
