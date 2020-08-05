@@ -83,18 +83,22 @@ such objects relate to each other.**
   Bisection (bisect)|  provide an efficient binary search through a sequence of sorted items.
 
    Itertools | Description
-   ---------------|----------------------
-   
-   chain| Combines multiple iterators into a single sequential iterator.
-   count| range() without upper limit.
-   cycle| Repeats an iterator’s items forever.
-   repeat| Repeats a single value. `repeat(1,10)`
-   tee| Splits a single iterator into multiple parallel iterators.
+   ---------------|--------------------
+   count   | range() without upper limit.
+   cycle   | Repeats an iterator’s items forever.
+   repeat  | Repeats a single value. `repeat(1,10)`
+   enumerate | enumerate()
+   accumulate | A sequence of reductions of the input iterable. (It's a higher-order function and can do a variety of clever calculations.)
+   chain   | Combines multiple iterators into a single sequential iterator.
+   groupby | Decompose a single iterable into a sequence of iterables over subsets of the input data.
+   tee     | Splits a single iterator into multiple parallel iterators.
    zip_longest| A variant of the zip built-in function that works well with iterators of different lengths.
    islice| Slices an iterator by numerical indexes without copying.
+   compress | Filters one iterable based on a second iterable of Boolean values.
    takewhile| Returns items from an iterator while a predicate function returns True.
-  dropwhile| Returns items from an iterator once the predicate function returns False for the first time.
-  filterfalse| The opposite of the filter built-in function.
+   dropwhile| Returns items from an iterator once the predicate function returns False for the first time.
+   filterfalse| The opposite of the filter built-in function.
+   starmap| Maps a function to an iterable sequence of tuples using each iterable as an `*args` argument to the given function.
 
 * Use decimal When Precision Is Paramount
 * Use `__getattr__`, `__getattribute__`, and `__setattr__` for Lazy Attributes
