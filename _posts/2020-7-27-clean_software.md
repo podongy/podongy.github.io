@@ -2,10 +2,10 @@
 layout: post
 title: SOLID
 ---
-* ###SRP(Single-Responsibility Principle) 
+## * SRP(Single-Responsibility Principle) 
   - A class should have only one reason to change.
   
-* ###OCP(Open-Closed Principle)
+## * OCP(Open-Closed Principle)
   - Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
   - When a single change to a program results in a cascade of changes to dependent module 
   - “Open For Extension”
