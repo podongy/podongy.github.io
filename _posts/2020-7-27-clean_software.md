@@ -20,3 +20,7 @@ title: SOLID
     - A model viewed in isolation cannot be meaningfully validated with respect to LSP! Validity must be judged from the perspective of possible usages of the model.
   - Design-by-Contract
   - Refactoring
+
+## * DIP(Dependency Inversion Principle)
+  - High level modules should not depend on low level modules; both should depend on abstractions. 
+  - Abstractions should not depend on details. Details should depend upon abstractions. 
