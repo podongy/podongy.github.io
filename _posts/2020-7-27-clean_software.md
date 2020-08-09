@@ -14,3 +14,9 @@ title: SOLID
     - The source code of such a module is inviolate. No one is allowed to make source code changes to it.
     
  ![](https://github.com/podongy/podongy.github.io/blob/master/images/fig_1.jpg)
+
+## * LSP(Liskov Substitution Principle)
+  - An object of type T may be substituted with any object of a subtype S.
+    - A model viewed in isolation cannot be meaningfully validated with respect to LSP! Validity must be judged from the perspective of possible usages of the model.
+  - Design-by-Contract
+  - Refactoring
